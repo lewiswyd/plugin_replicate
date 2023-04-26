@@ -22,6 +22,27 @@
     },
     {
       "keywords": [
+        "横版",
+        "壁纸"
+      ],
+      "params": {
+        "width": 640,
+        "height": 512
+      },
+      "desc": "分辨率会变成640x512，对SD模型无效"
+    },
+    {
+      "keywords": [
+        "竖版"
+      ],
+      "params": {
+        "width": 512,
+        "height": 640
+      },
+      "desc": "分辨率会变成512x640，对SD模型无效"
+    },
+    {
+      "keywords": [
         "二次元"
       ],
       "params": {
@@ -48,6 +69,22 @@
         "guidance_scale": 7
       },
       "desc": "使用未来风格模型出图"
+    },
+    {
+      "keywords": [
+        "修复",
+        "fix"
+      ],
+      "params": {
+        "model": "sczhou/codeformer",
+        "version": "7de2ea26c616d5bf2245ad0d5e24f0ff9a6204578a5c876db53142edd9d2cd56",
+        "image": "image",
+        "upscale": 2,
+        "face_upsample": true,
+        "background_enhance": true,
+        "codeformer_fidelity": 0.7
+      },
+      "desc": "修复人像图片"
     },
     {
       "keywords": [
