@@ -3,7 +3,8 @@
   "defaults": {
     "model": "cjwbw/anything-v4.0",
     "version": "42a996d39a96aedc57b2e0aa8105dea39c9c89d9d266caf6bb4327a1c191b061",
-    "prompt": "best quality"
+    "prompt": "best quality",
+    "negative_prompt": "NSFW"
   },
   "rules": [
     {
@@ -14,6 +15,7 @@
       "params": {
         "model": "stability-ai/stable-diffusion",
         "prompt": "best quality",
+        "negative_prompt": "NSFW",
         "version": "db21e45d3f7023abc2a46ee38a23973f6dce16bb082a930b0c49861f96d1e5bf",
         "image_dimensions": "512x512"
       },
@@ -49,6 +51,7 @@
         "version": "09a5805203f4c12da649ec1923bb7729517ca25fcac790e640eaa9ed66573b65",
         "negative_prompt": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name, NSFW",
         "prompt": "masterpiece, best quality, illustration, beautiful detailed, finely detailed, dramatic light, intricate details",
+        "negative_prompt": "NSFW",
         "num_inference_steps": 20,
         "guidance_scale": 9
       },
