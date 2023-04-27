@@ -65,7 +65,7 @@ class Replicate(Plugin):
                 else:
                     keywords = content
                     prompt = ""
-
+                keywords = keywords.replace(", ", ",")
                 keywords = keywords.split()
                 unused_keywords = []
                 if "help" in keywords or "帮助" in keywords:
