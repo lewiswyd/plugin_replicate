@@ -1,10 +1,11 @@
 {
   "replicate_api_token": "r8_cEP5oEmK8xO3WW910qIqpDLSg0Zal6k15PaJ2",
   "defaults": {
-    "model": "cjwbw/anything-v4.0",
-    "version": "42a996d39a96aedc57b2e0aa8105dea39c9c89d9d266caf6bb4327a1c191b061",
+    "model": "stability-ai/stable-diffusion",
+    "version": "db21e45d3f7023abc2a46ee38a23973f6dce16bb082a930b0c49861f96d1e5bf",
     "prompt": "best quality",
-    "negative_prompt": "NSFW"
+    "negative_prompt": "NSFW",
+    "image_dimensions": "512x512"
   },
   "rules": [
     {
@@ -44,7 +45,7 @@
     },
     {
       "keywords": [
-        "魔法学院"
+        "二次元v3+"
       ],
       "params": {
         "model": "cjwbw/anything-v3-better-vae",
@@ -59,7 +60,7 @@
     },
     {
       "keywords": [
-        "二次元"
+        "二次元v3"
       ],
       "params": {
         "model": "cjwbw/anything-v3-better-vae",
@@ -70,6 +71,35 @@
         "guidance_scale": 9
       },
       "desc": "使用二次元风格模型anything-v3出图"
+    },
+    {
+      "keywords": [
+        "二次元v4+"
+      ],
+      "params": {
+        "model": "cjwbw/anything-v4.0",
+        "version": "42a996d39a96aedc57b2e0aa8105dea39c9c89d9d266caf6bb4327a1c191b061",
+        "negative_prompt": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name, NSFW",
+        "prompt": "masterpiece, best quality, illustration, beautiful detailed, finely detailed, dramatic light, intricate details",
+        "negative_prompt": "NSFW",
+        "num_inference_steps": 20,
+        "guidance_scale": 9
+      },
+      "desc": "使用二次元风格模型anything-v4出图，内置了一些prompt"
+    },
+    {
+      "keywords": [
+        "二次元v4"
+      ],
+      "params": {
+        "model": "cjwbw/anything-v4.0",
+        "version": "42a996d39a96aedc57b2e0aa8105dea39c9c89d9d266caf6bb4327a1c191b061",
+        "negative_prompt": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name, NSFW",
+        "prompt": "best quality",
+        "num_inference_steps": 20,
+        "guidance_scale": 9
+      },
+      "desc": "使用二次元风格模型anything-v4出图"
     },
     {
       "keywords": [
